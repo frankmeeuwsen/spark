@@ -22,12 +22,25 @@ The project is currently in development with version 1.0.2. The main functionali
 - Support for multiple paragraphs
 - Customizable styling
 
+### How to install
+Download/fork the repository to a directory within your Obsidian vault. It should be available immediately. In the repo I also included 3 subfolders with demo-texts you can use to test the script
+- /alice: Full text of Alice in Wonderland, in separate chapters. Courtesy of [Project Gutenberg](https://github.com/GITenberg/Alice-s-Adventures-in-Wonderland_19033/tree/master)
+- /tao te ching: The translation of this important book is by Ursula K. Le Guin. Downloaded from [The Way and it's Virtue](https://github.com/seancswanson/the-way-and-its-virtue/blob/main/source-text/reformatted/leguin-translation-reformatted.txt) and reformatted for personal use.
+- /bloghelden: My own book from 2010 on the history of the Dutch blogosphere. Free to use from [my github repo](https://bloghelden.nl) as well.
+
+
 ### Usage
+
+Open [Demo script.md](Demo script.md) to see the basic use of the script and the various configuration options. 
+
 Basic usage in an Obsidian note:
 ```javascript
 await dv.view("spark")
+```
 
-// Or with custom configuration:
+Or with custom configuration:
+
+```javascript
 await dv.view("spark", {
     sourceFolder: "your/folder/path",
     buttonText: "✨ Custom Text",
@@ -36,6 +49,7 @@ await dv.view("spark", {
 ```
 
 ### Configuration Options
+
 ```javascript
 const defaultConfig = {
     sourceFolder: '"demofolder/tao te ching"',

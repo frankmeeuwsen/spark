@@ -23,5 +23,5 @@ addDividers: true
 
 ## Sourcefolder
 ```dataviewjs
-await dv.view("spark",{sourceFolder:"demofolder/bloghelden"});
+await dv.view("spark",{sourceFolder:"demofolder/alice"});
 ```
